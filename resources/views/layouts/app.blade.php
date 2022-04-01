@@ -34,7 +34,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="{{ route('annonce.create') }}" class="nav-link">Ajouter une nouvelle annonce</a>
+                            <a href="{{ route('annonce.index') }}" class="nav-link">Les annonces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('annonce.create') }}" class="nav-link">Ajouter une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('message.index') }}" class="nav-link">Mes messages</a>
                         </li>
                     </ul>
 

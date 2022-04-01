@@ -31,8 +31,13 @@
                             <p class="card-text text-center text-info"> {{ $annonce->localisation }} </p>
                             <p class="card-text text-center"> {{ $annonce->description }} </p>
                             <p class="card-text text-center"> {{ $annonce->price }} FCFA</p>
+                            <div class="text-center">
+                                <a href=" # " class="card-link ">Voir l'annonce</a>
+                                <a href=" {{ route('message.create', ['seller_id' => $annonce->user_id,'annonce_id' => $annonce->id]) }} " class="card-link">Contacter le vendeur</a>
+                            </div>
                         </div>
-                        </div>
+                       
+                    </div>
                 </div>
             @endforeach
         </div>
